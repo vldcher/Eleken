@@ -1,0 +1,95 @@
+nav
+	font-weight: bold
+	font-size: 12px
+	height: 100px
+	&::before, &::after
+			content: ''
+			height: 2px
+			width: 100%
+			position: relative
+			background-color: #ededed
+			display: inline-block
+
+	.menu-line
+		width: 100%
+		
+		
+		
+		&-container
+			margin-right: 150px
+			margin-left: 150px
+			ul, li
+				list-style-type: none
+				display: inline-block
+			li
+				margin-top: 35px
+				margin-bottom: 35px
+				margin-right: 35px
+				.sale-color
+					color: #fc411d
+				a
+					text-decoration: none
+					cursor: pointer
+					color: #adadad
+					border-bottom: 2px solid transparent
+					&:hover
+						text-decoration: none
+						color: #333333
+						border-bottom: 2px solid #187cd6
+						padding-bottom: 7px
+						transition: all .25s ease 
+
+
+			.logo
+				font-family: Didot
+				font-size: 50px
+				padding: 0
+				margin-top: 15px
+				margin-bottom: 15px
+				span
+					font-size: 32px
+
+			.search-wrapper
+				float: right
+				margin-right: 3px
+				.bag
+					color: #adadad
+					font-size: 11px
+					margin-top: 35px
+					float: left
+					a
+						text-decoration: none
+						cursor: pointer
+						color: #adadad
+						border-bottom: 2px solid transparent
+						&:hover
+							text-decoration: none
+							color: #333333
+							border-bottom: 2px solid #187cd6
+							padding-bottom: 7px
+							transition: all .25s ease
+					
+				.round
+					width: 46px
+					height: 46px
+					background: #fff
+					border: 2px solid #187cd6
+					line-height: 41px
+					text-align: center
+					font-size: 12px
+					color: #111
+					border-radius: 23px
+					float: left
+					margin-top: 18px
+					margin-left: 15px
+					&:hover
+						cursor: pointer
+						background: #187cd6
+						color: #fff
+						transition: all .5s ease
+
+
+				.fa-search
+					margin-top: 33px
+					margin-left: 20px
+					font-size: 15px
