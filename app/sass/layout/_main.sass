@@ -1,0 +1,98 @@
+main
+	background-color: #fff
+	.container
+		&::before, &::after
+			display: none
+
+		h1
+			font-size: 58px
+			font-family: PlayfairDisplay
+			text-align: center
+			margin-top: 100px
+			margin-bottom: 70px
+
+		.catalog-container
+			.catalog-menu
+				text-align: center
+
+				ul, li
+					list-style-type: none
+					display: inline-block
+					text-transform: uppercase
+					font-size: 12px
+				li
+					margin-top: 17px
+					margin-bottom: 15px
+					margin-right: 35px
+					a
+						text-decoration: none
+						cursor: pointer
+						color: #adadad
+						border-bottom: 2px solid transparent
+						&:hover,
+							text-decoration: none
+							color: #333333
+							border-bottom: 2px solid #187cd6
+							padding-bottom: 7px
+							transition: all .25s ease
+				li
+					.active
+						text-decoration: none
+						color: #333333
+						border-bottom: 2px solid #187cd6
+						padding-bottom: 7px
+						transition: all .25s ease
+
+			.catalog-wrapper
+				
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				
+				.catalog-item
+					min-height: 336px
+					width: 263px
+					cursor: pointer
+					margin-top: 40px
+					
+					&-image
+						min-height: 336px
+						max-width: 263px
+						background-size: cover
+						position: relative
+						&:hover
+							transform: scale(1.05)
+							transition: all .5s ease
+						.new-item
+							width: 48px
+							height: 26px
+							background: #187cd6
+							border-radius: 26px/26px
+							position: relative
+							top: 25px
+							left: 25px
+							span
+								position: relative
+								top: 5px
+								left: 10px
+								color: #fff
+								font-family: Lato
+								font-size: 11px
+						
+					&-name
+						text-align: center
+						margin-top: 30px
+						h4
+							font-size: 16px
+							font-family: PlayfairDisplay
+					&-price
+						margin-top: 10px
+						text-align: center
+						font-size: 16px
+						font-family: Lato
+						color: #adadad
+						.old-price
+							text-decoration: line-through
+						.new-price
+							color: #fc411d
+							margin-left: 10px
