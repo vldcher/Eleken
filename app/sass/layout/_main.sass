@@ -71,6 +71,10 @@ main
 							position: relative
 							top: 25px
 							left: 25px
+							&:hover
+								background: #fc411d
+								border-radius: 50%
+								transition: all .5s ease
 							span
 								position: relative
 								top: 5px
@@ -96,3 +100,89 @@ main
 						.new-price
 							color: #fc411d
 							margin-left: 10px
+			p
+				margin-top: 60px
+				margin-bottom: 60px
+				text-align: center
+				a
+					text-decoration: none
+					text-transform: uppercase
+					cursor: pointer
+					color: #adadad
+					font-size: 12px
+					&:hover
+						text-decoration: none
+						color: #187cd6
+						padding-bottom: 7px
+						transition: all .55s ease
+
+	.news
+		height: 286px
+		width: 100%
+		background-size: cover
+		position: relative
+		text-align: center
+
+		p
+			text-decoration: none
+			text-transform: uppercase
+			cursor: pointer
+			color: #3f6680
+			font-size: 12px
+			font-family: Lato
+			padding-top: 70px
+
+		h2
+			text-decoration: none
+			color: #fff
+			font-size: 38px
+			font-family: PlayfairDisplay
+			padding-top: 30px
+
+		
+		.transparent
+			position: relative
+			max-width: 300px
+			padding-top: 50px
+			margin: auto
+			background-size: cover
+			
+		.form-inner
+			position: relative
+			h3
+				&:after
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -6px
+					height: 2px
+					
+			input
+				display: block
+				width: 100%
+				padding: 0 15px
+				margin: 10px 0 15px
+				border-width: 0
+				line-height: 46px
+				border-radius: 20px
+				color: white
+				background: transparent
+				border: 2px solid rgba(255, 255, 255, 0.5)
+				font-size: 13px
+				letter-spacing: 1.5px
+				font-family: Lato
+				outline: none; /*убираем стандартную обводку браузера*/ 
+				// background-image: url(ссылка на изображение);   
+				// background-repeat: no-repeat; /*Убираем повтор изображения*/   
+				// background-position: 4px; /*Позиционируем*/   
+				// outline: none; /*убираем стандартную обводку браузера*/ 
+			.arrspan
+				float: right
+				margin-right: 20px
+				margin-top: -46px
+				position: relative
+				z-index: 2
+				color: rgba(255, 255, 255, 0.8)
+				cursor: pointer
+				.fa-chevron-right
+					font-size: 12px
